@@ -1,0 +1,9 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: ./
+
+#+TITLE: About Me
+#+AUTHOR: Martín Tomé
+
+#+EXPORT_FILENAME: about
+
+My name is Martín.

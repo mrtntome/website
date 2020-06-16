@@ -1,0 +1,61 @@
+baseurl = "mtome.xyz"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Martín Tomé"
+title = "mrtn.tm's personal site"
+
+theme = "goa"
+
+## Hugo Built-in Features
+disqusShortname = "mtome-xyz" 
+googleAnalytics = "UA-169558168-1"
+enableRobotsTXT = false
+
+## Site Settings
+[params]
+author = "Martín Tomé"
+intro = "Site's Intro"
+description = "Description of site"
+authorimage = "cara_50.png"
+dateformat = "2 Jan, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Martín Tomé's Personal Site and Blog"
+keywords = "physics, linux, sysadmin, docker, kubernetes"
+
+## Social Accounts
+[params.social]
+email = "mrtn.tome@gmail.com"
+linkedin = "mrtntome"
+github = "mrtntome"
+twitter = "MartnTom4"
+
+
+## Extras
+[params.extra]
+copyright = "© 2020 Martín Tomé [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 200
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 100
+    url = "/about/"
+
