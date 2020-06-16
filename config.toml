@@ -1,4 +1,4 @@
-baseurl = "mtome.xyz"
+baseurl = "http://mtome.xyz"
 builddrafts = false
 canonifyurls = false
 languageCode = "en-US"
