@@ -28,6 +28,11 @@ themeColor = "#68708A"
 
   ## Set as many as you want.
   [[params.socialIcons]]
+  icon = "fa-email"
+  title = "Email"
+  url = "mailto:mrtn.tome@gmail.com"
+  
+  [[params.socialIcons]]
   icon = "fa-linkedin"
   title = "Linkedin"
   url = "https://www.linkedin.com/in/mrtntome/"
