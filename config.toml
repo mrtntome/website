@@ -28,7 +28,7 @@ themeColor = "#68708A"
 
   ## Set as many as you want.
   [[params.socialIcons]]
-  icon = "fa-email"
+  icon = "fa fa-envelope"
   title = "Email"
   url = "mailto:mrtn.tome@gmail.com"
   
