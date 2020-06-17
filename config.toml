@@ -1,6 +1,10 @@
-title = "mrtn.tm's personal site"
+baseurl = ""
+title = "Martín Tomé"
+
 languageCode = "en"
+theme = "soho"
 enableInlineShortcodes = true
+disqusShortname = "martntom"
 
 summarylength = 10
 enableEmoji = true
@@ -17,8 +21,9 @@ copyright = "Martín Tomé"
 license = "CC BY-SA 4.0"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
+
 ## Set custom theme color.
-# themeColor = "#fc2803"
+themeColor = "#68708A"
 
 
   ## Set as many as you want.
@@ -40,10 +45,10 @@ licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 [menu]
 
   [[menu.main]]
-  name = "Posts"
+  name = "Blog"
   weight = 100
-  identifier = "posts"
-  url = "/posts/"
+  identifier = "blog"
+  url = "/blog/"
 
   [[menu.main]]
   name = "About"
