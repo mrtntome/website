@@ -1,60 +1,70 @@
-builddrafts = false
-canonifyurls = false
-languageCode = "en-US"
-
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-
-author = "Martín Tomé"
 title = "mrtn.tm's personal site"
+languageCode = "en"
+enableInlineShortcodes = true
 
-theme = "goa"
+summarylength = 10
+enableEmoji = true
 
-## Hugo Built-in Features
-disqusShortname = "mtome-xyz" 
-googleAnalytics = "UA-169558168-1"
-enableRobotsTXT = false
-
-## Site Settings
 [params]
 author = "Martín Tomé"
-intro = "Site's Intro"
-description = "Description of site"
-authorimage = "cara_50.png"
-dateformat = "2 Jan, 2006"
+description = "My Personal Site"
 
-## Site Meta Settings
-[params.meta]
-description = "Martín Tomé's Personal Site and Blog"
-keywords = "physics, linux, sysadmin, docker, kubernetes"
+## Set one of:
+# gravatar = "soho@example.com"
+profilePicture = "img/cara.png"
 
-## Social Accounts
-[params.social]
-email = "mrtn.tome@gmail.com"
-linkedin = "mrtntome"
-github = "mrtntome"
-twitter = "MartnTom4"
+copyright = "Martín Tomé"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+## Set custom theme color.
+# themeColor = "#fc2803"
 
 
-## Extras
-[params.extra]
-copyright = "© 2020 Martín Tomé [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
-poweredby = true
-highlightjs = true
-socialmarkup = true
-toc = true
-displayrssicon = true
+  ## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "https://www.linkedin.com/in/mrtntome/"
 
-## Main Menu
-[[menu.main]]
-    name = "blog"
-    weight = 200
-    identifier = "blog"
-    url = "/blog/"
-[[menu.main]]
-    name = "about"
-    identifier = "about"
-    weight = 100
-    url = "/about/"
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/mrtntome"
 
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "https://twitter.com/MartnTom4"
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 300
+  url = "/about/"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true # if false, you need to provide you own custom CSS
+  style = "monokai"
+  tabWidth = 4
