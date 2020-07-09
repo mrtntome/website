@@ -15,7 +15,7 @@ description = "My Personal Site"
 
 ## Set one of:
 # gravatar = "soho@example.com"
-profilePicture = "img/cara.png"
+profilePicture = "img/headshot.jpeg"
 
 copyright = "Martín Tomé"
 license = "CC BY-SA 4.0"
