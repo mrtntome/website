@@ -55,9 +55,15 @@ themeColor = "#68708A"
   url = "/blog/"
 
   [[menu.main]]
-  name = "About"
-  identifier = "about"
+  name = "Interesting Stuff"
+  identifier = "istuff"
   weight = 300
+  url = "/istuff/"
+
+  [[menu.main]]
+  name = "About Me"
+  identifier = "about"
+  weight = 400
   url = "/about/"
 
 [taxonomies]

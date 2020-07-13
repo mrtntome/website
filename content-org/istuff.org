@@ -1,0 +1,11 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: ./
+
+#+TITLE: Interesting Stuff
+#+AUTHOR: Martín Tomé
+
+#+EXPORT_FILENAME: istuff
+
+* Interesting Stuff 1
+* Interesting Stuff 2
+
