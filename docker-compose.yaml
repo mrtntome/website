@@ -29,7 +29,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   nginx:
-    image: nginx:satble_alpine
+    image: nginx:stable-alpine
     container_name: nginx
     restart: always
     expose:
@@ -41,6 +41,21 @@ services:
       - VIRTUAL_HOST=mtome.xyz,www.mtome.xyz
       - VIRTUAL_PORT=80
       - LETSENCRYPT_HOST=mtome.xyz,www.mtome.xyz
+      - LETSENCRYPT_EMAIL=mrtn.tome@gmail.com
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    restart: always
+    expose:
+      - "8080"
+      - "50000"
+    volumes:
+      - ./jenkins:/var/jenkins_home:rw
+    environment:
+      - VIRTUAL_HOST=jenkins.mtome.xyz,www.jenkins.mtome.xyz
+      - VIRTUAL_PORT=8080
+      - LETSENCRYPT_HOST=jenkins.mtome.xyz,www.jenkins.mtome.xyz
       - LETSENCRYPT_EMAIL=mrtn.tome@gmail.com
 
 volumes:
