@@ -5,7 +5,6 @@ services:
     image: jwilder/nginx-proxy:alpine
     container_name: nginx_proxy
     restart: always
-    user: 1001:1002
     ports:
       - "80:80"
       - "443:443"
@@ -22,7 +21,6 @@ services:
     image: duch/letsencrypt-nginx-proxy-companion:stable
     container_name: lenpc
     restart: always
-    user: 1001:1002
     volumes:
       - certs:/etc/nginx/certs:rw
       - confd:/etc/nginx/conf.d
@@ -34,7 +32,6 @@ services:
     image: nginx:stable-alpine
     container_name: nginx
     restart: always
-    user: 1001:1002
     expose:
       - "80"
     volumes:
@@ -50,7 +47,6 @@ services:
     image: jenkins/jenkins:lts
     container_name: jenkins
     restart: always
-    user: 1001:1002
     ports:
       - "8080:8080"
       - "50000:50000"
