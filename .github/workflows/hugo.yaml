@@ -1,0 +1,12 @@
+name: Hugo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: alpine
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: hugo
+      uses: klakegg/actions-hugo@1.0.0
