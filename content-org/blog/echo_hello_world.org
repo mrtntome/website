@@ -1,4 +1,4 @@
-#+HUGO_BASE_DIR: ../
+#+HUGO_BASE_DIR: ../../hugo
 #+HUGO_SECTION: blog
 
 #+TITLE: echo "Hello World!"

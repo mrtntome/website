@@ -1,4 +1,4 @@
-#+HUGO_BASE_DIR: ../
+#+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: ./
 
 #+TITLE: About Me
@@ -6,4 +6,4 @@
 
 #+EXPORT_FILENAME: about
 
-My name is Martín.
+My name is Martín
