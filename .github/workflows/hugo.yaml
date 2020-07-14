@@ -23,7 +23,7 @@ jobs:
       with:
         command: |
           cd ~/website
-          git pull && docker run --rm -v ./hugo:/src klakegg/hugo:0.73.0
+          git pull && docker run --rm -v /hugo:/src klakegg/hugo:0.73.0
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.PRIVATE_KEY}}
