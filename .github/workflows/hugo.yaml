@@ -17,3 +17,15 @@ jobs:
       with:
         source: hugo
         target: hugo/public
+
+    - name: ssh-deploy
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: |
+          cd ~/website
+          git pull && docker run --rm -it -v ./hugo:/src klakegg/hugo:0.73.0
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        privateKey: ${{ secrets.PRIVATE_KEY}}
+          
+          
