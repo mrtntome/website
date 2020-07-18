@@ -43,21 +43,6 @@ services:
       - LETSENCRYPT_HOST=mtome.xyz,www.mtome.xyz
       - LETSENCRYPT_EMAIL=mrtn.tome@gmail.com
 
-  jenkins:
-    image: jenkins/jenkins:lts
-    container_name: jenkins
-    restart: always
-    user: 1001:1002
-    expose:
-      - "8080"
-    volumes:
-      - ./jenkins:/var/jenkins_home:rw
-    environment:
-      - VIRTUAL_HOST=jenkins.mtome.xyz,www.jenkins.mtome.xyz
-      - VIRTUAL_PORT=8080
-      - LETSENCRYPT_HOST=jenkins.mtome.xyz,www.jenkins.mtome.xyz
-      - LETSENCRYPT_EMAIL=mrtn.tome@gmail.com
-
 volumes:
   certs:
   html:
