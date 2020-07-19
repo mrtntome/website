@@ -4,7 +4,7 @@
 #+TITLE: Interesting Stuff
 #+AUTHOR: Martín Tomé
 
-#+EXPORT_FILENAME: istuff
+#+EXPORT_FILENAME: links
 
 + Interesting Stuff 1
 + Interesting Stuff 2

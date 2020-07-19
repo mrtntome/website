@@ -55,13 +55,13 @@ themeColor = "#68708A"
   url = "/blog/"
 
   [[menu.main]]
-  name = "Interesting Stuff"
-  identifier = "istuff"
+  name = "Links"
+  identifier = "links"
   weight = 300
-  url = "/istuff/"
+  url = "/links/"
 
   [[menu.main]]
-  name = "About Me"
+  name = "About"
   identifier = "about"
   weight = 400
   url = "/about/"
