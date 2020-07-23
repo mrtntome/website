@@ -29,7 +29,7 @@ themeColor = "#68708A"
   [[params.socialIcons]]
   icon = "fa fa-envelope"
   title = "Email"
-  url = "mailto:mrtn.tome@gmail.com"
+  url = "email.html"
   
   [[params.socialIcons]]
   icon = "fa-linkedin"
